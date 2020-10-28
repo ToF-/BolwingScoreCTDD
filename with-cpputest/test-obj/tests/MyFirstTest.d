@@ -14,7 +14,8 @@ test-obj/tests/MyFirstTest.o: tests/MyFirstTest.cpp \
  cpputest/include/CppUTest/TestFailure.h \
  cpputest/include/CppUTest/TestPlugin.h \
  cpputest/include/CppUTest/MemoryLeakWarningPlugin.h \
- cpputest/include/CppUTest/MemoryLeakDetectorNewMacros.h
+ cpputest/include/CppUTest/MemoryLeakDetectorNewMacros.h \
+ src/BowlingScore.h
 
 cpputest/include/CppUTest/MemoryLeakDetectorNewMacros.h:
 
@@ -47,3 +48,5 @@ cpputest/include/CppUTest/TestPlugin.h:
 cpputest/include/CppUTest/MemoryLeakWarningPlugin.h:
 
 cpputest/include/CppUTest/MemoryLeakDetectorNewMacros.h:
+
+src/BowlingScore.h:

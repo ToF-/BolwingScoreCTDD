@@ -2,7 +2,7 @@
 SILENCE = @
 
 #---- Outputs ----#
-COMPONENT_NAME = rename_me
+COMPONENT_NAME = BowlingScore
 
 #--- Inputs ----#
 PROJECT_HOME_DIR = .
@@ -24,8 +24,8 @@ endif
 # SRC_DIRS specifies directories containing
 # production code C and CPP files.
 #
-SRC_FILES += example-src/Example.c
-SRC_DIRS += example-platform
+SRC_FILES += src/BowlingScore.c
+SRC_DIRS += src
 
 # --- TEST_SRC_FILES and TEST_SRC_DIRS ---
 # Test files are always included in the build.
@@ -55,6 +55,7 @@ CPPUTEST_USE_EXTENSIONS = Y
 # containing directory
 INCLUDE_DIRS += $(CPPUTEST_HOME)/include
 INCLUDE_DIRS += $(CPPUTEST_HOME)/include/Platforms/Gcc
+INCLUDE_DIRS += src
 INCLUDE_DIRS += example-include
 INCLUDE_DIRS += example-fff
 INCLUDE_DIRS += tests/exploding-fakes

@@ -2,12 +2,10 @@
 
 extern "C"
 {
-	/*
-	 * Add your c-only include files here
-	 */
+#include "BowlingScore.h"
 }
 
-TEST_GROUP(MyCode)
+TEST_GROUP(BowlingScore)
 {
     void setup()
     {
@@ -18,9 +16,10 @@ TEST_GROUP(MyCode)
     }
 };
 
-TEST(MyCode, test1)
+TEST(BowlingScore, ScoreForZeroThrowsIsZero)
 {
-    LONGS_EQUAL(4, 2+2);
-    STRCMP_EQUAL("hello", "world!");
+    int rolls[MAX_ROLLS] = {} ;
+    int score = BowlingScore(rolls);
+    CHECK_EQUAL(0, score);
 }
 
