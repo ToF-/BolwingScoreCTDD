@@ -14,6 +14,7 @@ TEST_TEAR_DOWN(BowlingScore)
 
 TEST(BowlingScore, ScoreForZeroThrowsIsZero)
 {
+
     int rolls[MAX_ROLLS] = {} ;
     int score = BowlingScore(rolls);
     TEST_ASSERT_EQUAL(0, score);
